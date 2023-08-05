@@ -34,6 +34,9 @@ html, body{
     text-decoration: none;
     font-size: 18px;
 }
+#nav h2:hover{
+    cursor:pointer;
+}
 #heading{
     margin-top: 90px;
 
@@ -58,3 +61,15 @@ html, body{
     text-transform: uppercase;
     font-weight: 700;
  }
+
+ #smallheading{
+    margin-top: 100px;
+    padding-right: 40px;
+}
+#smallheading h3{
+    text-align:right;
+    text-transform: uppercase;
+    margin-top: .5vw;
+    font-size: 1.5vw;
+ }
+
