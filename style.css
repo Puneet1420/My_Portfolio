@@ -57,7 +57,7 @@ html, body{
     width: fit-content;
  }
  #blocktext h3{
-    font-size: .9vw;
+    font-size: 1.5vw;
     text-transform: uppercase;
     font-weight: 700;
  }
@@ -73,3 +73,74 @@ html, body{
     font-size: 1.5vw;
  }
 
+ #herofooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 3%;
+    padding: 0 0.7vw;
+ }
+
+ #herofooter a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    padding-left: 2.2vw;
+ }
+
+ #iconset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 40px;
+    gap: 5px;
+ }
+ #iconset:hover{
+    cursor: pointer;
+ }
+
+ #herofooter .circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: #888;
+    border-radius: 50%;
+ }
+
+ #secondpage{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    padding-top: 150px;
+    padding-right: 10vw;
+ }
+
+ .elem{
+    width: 100%;
+    border-top:1px solid #888;
+    padding: 2.4vw 3vw;
+    padding-right: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+.elem h1{
+    text-transform: uppercase;
+    font-size: 6vw;
+    opacity: .6;
+}
+
+.elemlast{
+  border-bottom: 1px solid #888;
+}
+
+.elem h3{
+    font-size: 1.5vw;
+    font-weight: bold;
+}
