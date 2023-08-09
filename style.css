@@ -9,11 +9,23 @@ html, body{
     width: 100%;
 }
 
+#minicircle{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: #fff;
+    z-index: 99999;
+    border-radius: 50%;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1.5s;
+}
+
 #main{
     width: 100%;
+    background-color: #000;
 }
 
 #hero{
+    position: relative;
     height: 100vh;
     width: 100%;
     background-color:black;
