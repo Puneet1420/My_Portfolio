@@ -16,7 +16,7 @@ html, body{
     background-color: #fff;
     z-index: 99999;
     border-radius: 50%;
-    transition: cubic-bezier(0.19, 1, 0.22, 1)1.5s;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
 }
 
 #main{
@@ -195,6 +195,7 @@ html, body{
 
 #about img {
     width: 250px;
+    border-radius: 50%;
 }
 
 #textabout a {
