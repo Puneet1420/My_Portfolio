@@ -36,6 +36,37 @@ function circlemousefollower (xscale, yscale){
 }
 circlemousefollower();
 
+//when mouse will be hover the hide pic will be show..................
+document.querySelectorAll(".elem").forEach(function(elem){
+    let rotate = 0;
+    let diffrot = 0;
+
+    elem.addEventListener('mouseleave',function(details){
+        gsap.to(elem.querySelector("img"),{
+            opacity: 0,
+            ease: Power3,
+        })
+    })
+
+
+    elem.addEventListener("mousemove", function(details){
+       let diff = details.clientY-elem.getBoundingClientRect().top;
+         diffrot =details.clientX -rotate;
+         rotate = details.clientX;
+         gsap.utils.clamp(-20,20, diff)
+        gsap.to(elem.querySelector("img"),{ 
+            opacity: 1,
+            ease: Power3,
+            top: diffrot,
+            left: details.clientX,
+            rotate:gsap.utils.clamp(-20,20,diffrot *0.5),
+
+        });
+    });
+});
+
+
+
 
 // gsap style for animation
 let tl = gsap.timeline();
@@ -58,6 +89,7 @@ tl.from("#blocktext h3,#smallheading h3,#herofooter ",{
     duration:0.3,
     delay:0.3,
     opacity:0,
-    stagger:0.3
+    stagger:0.3,
+});
 
-})
+//Dom Manipulation.............................
