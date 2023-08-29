@@ -92,4 +92,62 @@ tl.from("#blocktext h3,#smallheading h3,#herofooter ",{
     stagger:0.3,
 });
 
+// tl.to("#navoption",{
+//     y:-30,
+//     duration:0.3,
+//     delay:0.3,
+//     opacity:1,
+//     scrollTrigger:"#navoption h3",
+// });
+
 //Dom Manipulation.............................
+ let showmenu = document.querySelector("#navoption");
+ let hidemenu = document.querySelector("#nav h2");
+ hidemenu.onclick = () => {
+    hidemenu.style.opacity = "0";
+    showmenu.style.opacity = "1";
+    // showmenu.style.transition=  "all ease 0.5s";
+    
+ }
+ let closemenu = document.querySelector("#close");
+ closemenu.onclick =() => {
+    hidemenu.style.opacity = "1";
+    showmenu.style.opacity = "0";
+ }
+
+ // lets talk button//
+ let talk = document.getElementById("about");
+ let lettalk = talk.querySelector("button");
+ lettalk.onclick = () => {
+    location.href = "https://www.instagram.com/a_king_is_always_be_a_king/";
+ };
+ //
+ let youtube = document.querySelector("#subscribe h2");
+ youtube.onclick = () => {
+    location.href ="https://www.youtube.com/channel/UC_v6O9LrLmxGMr3ECOkeFYQ";
+ }
+ //
+ let map = document.querySelector("#blocktext h3");
+ map.onclick = () => {
+    location.href ="https://goo.gl/maps/EMiaW9gPaAsWLZqG9";
+ }
+
+ let projects = document.querySelectorAll("#navoption h3");
+ projects[0].onclick = () =>{
+    location.href ="https://github.com/Puneet1420?tab=repositories";
+ }
+// date and time code in footer section------------------------------------------------------
+let dclock = document.querySelectorAll("#left h3");
+let d = new Date();
+let time = (d.toLocaleTimeString('en-IN'));
+setInterval(function(){
+    let d = new Date();
+    let time = (d.toLocaleTimeString('en-IN'));
+    dclock[1].innerHTML = time;
+    },1000);
+//
+//year
+
+let year = d.getFullYear();
+dclock[0].innerHTML = year;
+ 

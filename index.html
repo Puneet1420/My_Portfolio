@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./loco.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="./stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -16,6 +20,13 @@
         <div id="hero">
             <div id="nav">
                 <a href="#">Puneet Bajpai</a>
+                <div id="navoption">
+                    <h3>Projects</h3>
+                    <h3>Experince</h3>
+                    <h3>contact us</h3>
+                    <h3>hudu</h3>
+                    <h3 id="close"><i class="ri-close-line"></i></h3>
+                </div>
                 <h2>Menu</h2>
             </div>
             <div id="heading">
@@ -60,7 +71,7 @@
             <div id="textabout">
                 <h3>(About Me)</h3>
                 <p>I'm a Full Stack Devloper with a passion for creating Websites that not only look good but also solve real problems. When I'm not sketching ideas on paper, you can find me binge-watching a Netflix series or playing video games. My design philosophy is simple: make it visually appealing, functional, and bring a smile to people's faces. I'm the devloper you want on your team if you want to make people say 'I need that in my life!'.</p>
-                <a href="/">Let's talk</a>
+                <button id="btn">Let's Talk</button>
             </div>
 
         </div>
@@ -70,8 +81,8 @@
         </div>
         <div id="footer">
             <div id="left">
-                <h3>2023 &copy;</h3>
-                <h3>00.00 Am est</h3>
+                <h3 id="year"> &copy;</h3>
+                <h3 id="time"></h3>
             </div>
             <div id="right">
                 <a href="https://github.com/Puneet1420" target="_blank">Github</a>
